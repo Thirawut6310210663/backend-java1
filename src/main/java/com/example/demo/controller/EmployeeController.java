@@ -6,6 +6,7 @@ import java.util.List;
 import javax.xml.crypto.Data;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,4 +36,10 @@ public class EmployeeController {
 		return body;
 	}
 	
+	
+	@GetMapping("/employee/{employeeId}")
+	public Employee getEmployeeDetail(@PathVariable Integer employeeId) {
+		System.out.println("employee = "+ employeeId);
+		return null;
+	}
 }
