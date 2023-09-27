@@ -2,32 +2,13 @@ package com.example.demo.model;
 
 public class Product {
 
-	private Integer productId ;
+	private Integer productId;
 	private String productName;
 	private Double productPrice;
-	private Double productAmount;
+	private Integer productAmount;
 	private String productDetail;
 	
 	
-	
-	public Product() {
-		super();
-	}
-	
-	
-	
-	public Product(Integer productId, String productName, Double productPrice, Double productAmount,
-			String productDetail) {
-		super();
-		this.productId = productId;
-		this.productName = productName;
-		this.productPrice = productPrice;
-		this.productAmount = productAmount;
-		this.productDetail = productDetail;
-	}
-
-
-
 	public Integer getProductId() {
 		return productId;
 	}
@@ -46,10 +27,10 @@ public class Product {
 	public void setProductPrice(Double productPrice) {
 		this.productPrice = productPrice;
 	}
-	public Double getProductAmount() {
+	public Integer getProductAmount() {
 		return productAmount;
 	}
-	public void setProductAmount(Double productAmount) {
+	public void setProductAmount(Integer productAmount) {
 		this.productAmount = productAmount;
 	}
 	public String getProductDetail() {
@@ -60,4 +41,6 @@ public class Product {
 	}
 	
 	
+	
+
 }
